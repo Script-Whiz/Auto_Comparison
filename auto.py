@@ -35,3 +35,40 @@ if 'transmission' in autos.columns:
 else:
     st.error("The 'transmission' column is missing from the data.")
     
+# Create a scatter plot using Plotly Express
+def create_scatter_plot(auto_data):
+    try:
+        fig = px.scatter(
+            auto_data,
+            x='model',
+            y='price',
+            title='Scatter Plot of Car Models vs Price',
+            labels={'model': 'Car Model', 'price': 'Price ($)'},
+            hover_data=['transmission']
+        )
+        return fig
+    except Exception as e:
+        st.error(f"Error creating scatter plot: {e}")
+        return None
+    
+# Initial unfiltered scatter plot
+if not filtered_autos.empty:
+    fig = create_scatter_plot(filtered_autos)
+    if fig:
+        # Display the scatter plot with Streamlit
+        st.write("Car models compared to their prices:")
+        st.plotly_chart(fig)
+        
+# Add a button to filter models starting with "Chevrolet"
+if st.button('Show Chevrolet Models'):
+    if not filtered_autos.empty:
+        chevrolet_autos = filtered_autos[filtered_autos['model'].str.lower().str.startswith('chevrolet')]
+        if not chevrolet_autos.empty:
+            chevy_fig = create_scatter_plot(chevrolet_autos)
+            if chevy_fig:
+                st.write("Below are the cars starting with 'Chevrolet':")
+                st.plotly_chart(chevy_fig)
+            else:
+                st.write("Error creating Chevrolet scatter plot.")
+        else:
+            st.write("No Chevrolet models found.")
