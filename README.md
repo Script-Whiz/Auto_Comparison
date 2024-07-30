@@ -41,7 +41,8 @@ Before you can run this application, make sure you have the following installed 
 4. The render.com render lives at:
    https://auto-comparison-8.onrender.com 
 
-
+## Look at the GitHub Repository
+   https://github.com/Script-Whiz/Auto_Comparison.git
 =======
 # Auto_Comparison
 
