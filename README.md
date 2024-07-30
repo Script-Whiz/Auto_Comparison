@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Auto_Sales, by Deborah Thomas
 This is a tool to compare auto sales, from 1908-2019, studying price, year, model of car, condition of car, number of cylinders, odemeter reading, type of car, color, days on market.
 
@@ -42,3 +43,7 @@ Before you can run this application, make sure you have the following installed 
   
 
 
+=======
+# Auto_Comparison
+Auto sales comparison  from 1908-2019
+>>>>>>> fcfb943738f3bc313a6c66b7d8fec923793d1b95
