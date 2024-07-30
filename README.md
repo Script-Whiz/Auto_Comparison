@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Auto_Sales, by Deborah Thomas
+# Auto_Comparison, by Deborah Thomas
 This is a tool to compare auto sales, from 1908-2019, studying price, year, model of car, condition of car, number of cylinders, odemeter reading, type of car, color, days on market.
 
 To launch this tool on your own computer, type this at a linux prompt:
@@ -39,11 +39,9 @@ Before you can run this application, make sure you have the following installed 
    http://0.0.0.0:10000
  
 4. The render.com render lives at:
-   https://auto-sales-13.onrender.com
-  
+   https://auto-comparison-8.onrender.com 
 
 
 =======
 # Auto_Comparison
-Auto sales comparison  from 1908-2019
->>>>>>> fcfb943738f3bc313a6c66b7d8fec923793d1b95
+
